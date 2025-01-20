@@ -12,11 +12,11 @@ public class testSteDef {
 		testOperations = new TestOperations();
 	}
 	
-	
-	@Given("launch the url on browser")
-	public void launch_the_url_on_browser() {
-	    testOperations.launchTheUrl();
-	}
+//	
+//	@Given("launch the url on browser")
+//	public void launch_the_url_on_browser() {
+//	    testOperations.launchTheUrl();
+//	}
 
 	@Then("navigate to the {string}")
 	public void navigate_to_the(String TabName) {

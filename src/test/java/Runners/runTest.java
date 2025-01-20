@@ -2,18 +2,19 @@ package Runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import CommonLogics.Drivers;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+
+import Logics.Drivers;
 
 @CucumberOptions(
 		features = {"src/test/java/Features"},
 		glue= {"StepDefinitions"},
 		dryRun =false,
 		monochrome=true,
-		tags ="@Login"	)
+		tags ="@Itempurchase"	)
 
 @Listeners(Runners.Listeners.class)
 public class runTest extends AbstractTestNGCucumberTests
